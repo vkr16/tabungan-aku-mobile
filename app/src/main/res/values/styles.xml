@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="customButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="pinButtons" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/pin_buttons</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="customSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="track">@drawable/switch_track</item>
+    </style>
+</resources>

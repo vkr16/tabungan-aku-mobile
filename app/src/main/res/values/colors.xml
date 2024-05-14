@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main">#283593</color>
+    <color name="secondary">#3f51b5</color>
+    <color name="accent">#c5cae9</color>
+
+    <!-- Tailwind Slate Colors -->
+    <color name="tailwind_slate_50">#F8FAFC</color>
+    <color name="tailwind_slate_100">#F1F5F9</color>
+    <color name="tailwind_slate_200">#E2E8F0</color>
+    <color name="tailwind_slate_300">#CBD5E1</color>
+    <color name="tailwind_slate_400">#94A3B8</color>
+    <color name="tailwind_slate_500">#64748B</color>
+    <color name="tailwind_slate_600">#475569</color>
+    <color name="tailwind_slate_700">#334155</color>
+    <color name="tailwind_slate_800">#1E293B</color>
+    <color name="tailwind_slate_900">#0F172A</color>
+
+    <!-- Tailwind Red Colors -->
+    <color name="tailwind_red_50">#FEF2F2</color>
+    <color name="tailwind_red_100">#FEE2E2</color>
+    <color name="tailwind_red_200">#FECACA</color>
+    <color name="tailwind_red_300">#FCA5A5</color>
+    <color name="tailwind_red_400">#F87171</color>
+    <color name="tailwind_red_500">#EF4444</color>
+    <color name="tailwind_red_600">#DC2626</color>
+    <color name="tailwind_red_700">#B91C1C</color>
+    <color name="tailwind_red_800">#991B1B</color>
+    <color name="tailwind_red_900">#7F1D1D</color>
+
+    <!-- Tailwind Blue Colors -->
+    <color name="tailwind_blue_50">#EFF6FF</color>
+    <color name="tailwind_blue_100">#DBEAFE</color>
+    <color name="tailwind_blue_200">#BFDBFE</color>
+    <color name="tailwind_blue_300">#93C5FD</color>
+    <color name="tailwind_blue_400">#60A5FA</color>
+    <color name="tailwind_blue_500">#3B82F6</color>
+    <color name="tailwind_blue_600">#2563EB</color>
+    <color name="tailwind_blue_700">#1D4ED8</color>
+    <color name="tailwind_blue_800">#1E40AF</color>
+    <color name="tailwind_blue_900">#1E3A8A</color>
+
+    <!-- Tailwind Green Colors -->
+    <color name="tailwind_green_50">#F0FDF4</color>
+    <color name="tailwind_green_100">#DCFCE7</color>
+    <color name="tailwind_green_200">#BBF7D0</color>
+    <color name="tailwind_green_300">#86EFAC</color>
+    <color name="tailwind_green_400">#4ADE80</color>
+    <color name="tailwind_green_500">#22C55E</color>
+    <color name="tailwind_green_600">#16A34A</color>
+    <color name="tailwind_green_700">#15803D</color>
+    <color name="tailwind_green_800">#166534</color>
+    <color name="tailwind_green_900">#14532D</color>
+
+    <!-- Tailwind Yellow Colors -->
+    <color name="tailwind_yellow_50">#FEFCE8</color>
+    <color name="tailwind_yellow_100">#FEF9C3</color>
+    <color name="tailwind_yellow_200">#FEF08A</color>
+    <color name="tailwind_yellow_300">#FDE047</color>
+    <color name="tailwind_yellow_400">#FACC15</color>
+    <color name="tailwind_yellow_500">#EAB308</color>
+    <color name="tailwind_yellow_600">#CA8A04</color>
+    <color name="tailwind_yellow_700">#A16207</color>
+    <color name="tailwind_yellow_800">#854D0E</color>
+    <color name="tailwind_yellow_900">#713F12</color>
+
+    <!-- Tailwind Rose Colors -->
+    <color name="tailwind_rose_50">#fff1f2</color>
+    <color name="tailwind_rose_100">#ffe4e6</color>
+    <color name="tailwind_rose_200">#fecdd3</color>
+    <color name="tailwind_rose_300">#fda4af</color>
+    <color name="tailwind_rose_400">#fb7185</color>
+    <color name="tailwind_rose_500">#f43f5e</color>
+    <color name="tailwind_rose_600">#e11d48</color>
+    <color name="tailwind_rose_700">#be123c</color>
+    <color name="tailwind_rose_800">#9f1239</color>
+    <color name="tailwind_rose_900">#881337</color>
+    <color name="tailwind_rose_950">#4c0519</color>
+
+    <!-- Tailwind Violet Colors -->
+    <color name="tailwind_violet_50">#f5f3ff</color>
+    <color name="tailwind_violet_100">#ede9fe</color>
+    <color name="tailwind_violet_200">#ddd6fe</color>
+    <color name="tailwind_violet_300">#c4b5fd</color>
+    <color name="tailwind_violet_400">#a78bfa</color>
+    <color name="tailwind_violet_500">#8b5cf6</color>
+    <color name="tailwind_violet_600">#7c3aed</color>
+    <color name="tailwind_violet_700">#6d28d9</color>
+    <color name="tailwind_violet_800">#5b21b6</color>
+    <color name="tailwind_violet_900">#4c1d95</color>
+    <color name="tailwind_violet_950">#2e1065</color>
+
+    <!-- Tailwind Teal Colors -->
+    <color name="tailwind_teal_50">#f0fdfa</color>
+    <color name="tailwind_teal_100">#ccfbf1</color>
+    <color name="tailwind_teal_200">#99f6e4</color>
+    <color name="tailwind_teal_300">#5eead4</color>
+    <color name="tailwind_teal_400">#2dd4bf</color>
+    <color name="tailwind_teal_500">#14b8a6</color>
+    <color name="tailwind_teal_600">#0d9488</color>
+    <color name="tailwind_teal_700">#0f766e</color>
+    <color name="tailwind_teal_800">#115e59</color>
+    <color name="tailwind_teal_900">#134e4a</color>
+    <color name="tailwind_teal_950">#042f2e</color>
+
+    <!-- Tailwind Emerald Colors -->
+    <color name="tailwind_emerald_50">#ecfdf5</color>
+    <color name="tailwind_emerald_100">#d1fae5</color>
+    <color name="tailwind_emerald_200">#a7f3d0</color>
+    <color name="tailwind_emerald_300">#6ee7b7</color>
+    <color name="tailwind_emerald_400">#34d399</color>
+    <color name="tailwind_emerald_500">#10b981</color>
+    <color name="tailwind_emerald_600">#059669</color>
+    <color name="tailwind_emerald_700">#047857</color>
+    <color name="tailwind_emerald_800">#065f46</color>
+    <color name="tailwind_emerald_900">#064e3b</color>
+    <color name="tailwind_emerald_950">#022c22</color>
+
+    <!-- Tailwind Grey Colors -->
+    <color name="tailwind_grey_50">#f9fafb</color>
+    <color name="tailwind_grey_100">#f3f4f6</color>
+    <color name="tailwind_grey_200">#e5e7eb</color>
+    <color name="tailwind_grey_300">#d1d5db</color>
+    <color name="tailwind_grey_400">#9ca3af</color>
+    <color name="tailwind_grey_500">#6b7280</color>
+    <color name="tailwind_grey_600">#4b5563</color>
+    <color name="tailwind_grey_700">#374151</color>
+    <color name="tailwind_grey_800">#1f2937</color>
+    <color name="tailwind_grey_900">#111827</color>
+    <color name="tailwind_grey_950">#030712</color>
+
+    <!-- Tailwind Orange Colors -->
+    <color name="tailwind_orange_50">#fff7ed</color>
+    <color name="tailwind_orange_100">#ffedd5</color>
+    <color name="tailwind_orange_200">#fed7aa</color>
+    <color name="tailwind_orange_300">#fdba74</color>
+    <color name="tailwind_orange_400">#fb923c</color>
+    <color name="tailwind_orange_500">#f97316</color>
+    <color name="tailwind_orange_600">#ea580c</color>
+    <color name="tailwind_orange_700">#c2410c</color>
+    <color name="tailwind_orange_800">#9a3412</color>
+    <color name="tailwind_orange_900">#7c2d12</color>
+    <color name="tailwind_orange_950">#431407</color>
+</resources>

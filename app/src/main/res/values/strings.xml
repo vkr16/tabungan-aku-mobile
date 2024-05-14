@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tabungan Aku</string>
+    <string name="app_version">v1.0-beta</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="show_password">Show password</string>
+    <string name="enter_pin">Enter your PIN</string>
+    <string name="loading">Processing</string>
+</resources>
