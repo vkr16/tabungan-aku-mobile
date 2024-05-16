@@ -15,4 +15,13 @@
     <style name="customSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
         <item name="track">@drawable/switch_track</item>
     </style>
+
+    <style name="roundedImageView">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="roundedCard">
+        <item name="cornerSize">16dp</item>
+        <item name="background">@color/tailwind_blue_100</item>
+    </style>
 </resources>

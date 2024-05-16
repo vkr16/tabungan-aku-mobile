@@ -6,5 +6,8 @@
     <string name="login">Login</string>
     <string name="show_password">Show password</string>
     <string name="enter_pin">Enter your PIN</string>
-    <string name="loading">Processing</string>
+    <string name="loading_label">Loading...</string>
+    <string name="total_balance_label">Total Balance</string>
+    <string name="withdraw_button_label">Withdraw</string>
+    <string name="deposit_button_label">Deposit</string>
 </resources>

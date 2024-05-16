@@ -5,7 +5,7 @@
             <corners
                 android:radius="14dp"
                 />
-            <solid android:color="@color/tailwind_slate_800"/>
+            <solid android:color="@color/tailwind_slate_700"/>
             <padding
                 android:bottom="0dp"
                 android:left="0dp"
@@ -20,7 +20,7 @@
             <corners
                 android:radius="14dp"
                 />
-            <solid android:color="@color/tailwind_slate_900"/>
+            <solid android:color="@color/tailwind_slate_800"/>
             <padding
                 android:bottom="0dp"
                 android:left="0dp"

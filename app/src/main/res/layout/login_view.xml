@@ -148,5 +148,18 @@
             android:textSize="7pt"
             android:id="@+id/login_button"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kuncup"
+            android:text="kuncupp"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kuncupl"
+            android:text="kuncupp"
+            android:textSize="10pt"/>
     </LinearLayout>
 </ScrollView>

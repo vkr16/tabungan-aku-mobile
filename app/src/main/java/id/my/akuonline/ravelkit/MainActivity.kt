@@ -1,8 +1,10 @@
 package id.my.akuonline.ravelkit
 
 import android.os.Bundle
+import android.os.SystemClock
 import android.text.InputType
 import android.text.Layout
+import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
@@ -16,6 +18,8 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.switchmaterial.SwitchMaterial
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,11 +27,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.login_view)
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.container)) { v, insets ->
-//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-//            insets
-//        }
         val username : EditText = findViewById(R.id.input_username)
         val password : EditText = findViewById(R.id.input_password)
         val show : CheckBox = findViewById(R.id.show_password)
@@ -49,18 +48,33 @@ class MainActivity : AppCompatActivity() {
         }
         val loginBtn : Button = findViewById(R.id.login_button)
 
-        loginBtn.setOnClickListener{
+        loginBtn.setOnClickListener {
             // Inflate the loading layout
             showLoading()
         }
-    }
 
+        val kuncup : TextView = findViewById(R.id.kuncup)
+        val kuncup2 : TextView = findViewById(R.id.kuncupl)
+
+
+        val millisyuk = SystemClock.elapsedRealtime().toString()
+        kuncup.text = millisyuk
+
+    }
 
     fun showLoading() {
         // Add the loading view to the main content view
+        val loginBtn : Button = findViewById(R.id.login_button)
+        loginBtn.isClickable = false
         val mainView = findViewById<ViewGroup>(android.R.id.content)
         mainView.addView(layoutInflater.inflate(R.layout.loading_screen, null))
+    }
 
-
+    fun hideLoading() {
+        // Add the loading view to the main content view
+        val loginBtn : Button = findViewById(R.id.login_button)
+        loginBtn.isClickable = true
+        val mainView = findViewById<ViewGroup>(android.R.id.content)
+        mainView.removeView(layoutInflater.inflate(R.layout.loading_screen, null))
     }
 }
