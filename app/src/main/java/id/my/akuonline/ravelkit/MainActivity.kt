@@ -1,6 +1,7 @@
 package id.my.akuonline.ravelkit
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.os.SystemClock
 import android.text.InputType
 import android.text.Layout
@@ -17,12 +18,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.transition.Visibility
 import com.google.android.material.switchmaterial.SwitchMaterial
 import java.text.SimpleDateFormat
 import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
+    private var loadingView: View? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -47,34 +51,57 @@ class MainActivity : AppCompatActivity() {
             findViewById<CheckBox>(R.id.show_password).performClick()
         }
         val loginBtn : Button = findViewById(R.id.login_button)
-
         loginBtn.setOnClickListener {
             // Inflate the loading layout
-            showLoading()
+            val usernameErr :TextView =  findViewById(R.id.username_err_msg)
+            usernameErr.visibility = View.GONE
+
+            if (username.text.toString() == ""){
+                usernameErr.visibility = View.VISIBLE
+                usernameErr.text = "Please put down your fucking username"
+            }else {
+                showLoading()
+                object : CountDownTimer(5000, 1000) { // Initial delay and interval
+                    override fun onTick(millisUntilFinished: Long) {
+                        // Code to be executed at each interval
+                    }
+
+                    override fun onFinish() {
+                        // Code to be executed after the countdown
+                        hideLoading()
+                    }
+                }.start()
+            }
         }
+    }
 
-        val kuncup : TextView = findViewById(R.id.kuncup)
-        val kuncup2 : TextView = findViewById(R.id.kuncupl)
+    override fun onPause() {
+        super.onPause()
+        findViewById<Button>(R.id.login_button).text = "Paused"
+    }
 
-
-        val millisyuk = SystemClock.elapsedRealtime().toString()
-        kuncup.text = millisyuk
-
+    override fun onResume() {
+        super.onResume()
+        findViewById<Button>(R.id.login_button).text = "Login"
     }
 
     fun showLoading() {
         // Add the loading view to the main content view
-        val loginBtn : Button = findViewById(R.id.login_button)
+        val loginBtn: Button = findViewById(R.id.login_button)
         loginBtn.isClickable = false
+        loginBtn.text = "Logging in"
         val mainView = findViewById<ViewGroup>(android.R.id.content)
-        mainView.addView(layoutInflater.inflate(R.layout.loading_screen, null))
+        loadingView = layoutInflater.inflate(R.layout.loading_screen, null)
+        mainView.addView(loadingView)
     }
 
     fun hideLoading() {
-        // Add the loading view to the main content view
-        val loginBtn : Button = findViewById(R.id.login_button)
+        // Remove the loading view from the main content view
+        val loginBtn: Button = findViewById(R.id.login_button)
         loginBtn.isClickable = true
+        loginBtn.text = "Login"
         val mainView = findViewById<ViewGroup>(android.R.id.content)
-        mainView.removeView(layoutInflater.inflate(R.layout.loading_screen, null))
+        loadingView?.let { mainView.removeView(it) }
+        loadingView = null
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
+    android:id="@+id/content"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -82,6 +82,13 @@
                 android:background="@drawable/bg_input_text"
                 android:fontFamily="@font/ubuntusans"
                 android:textSize="7pt"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/username_err_msg"
+                android:textColor="@color/tailwind_red_500"
+                android:fontFamily="@font/ubuntusans"/>
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20dp"/>
@@ -105,7 +112,13 @@
                 android:background="@drawable/bg_input_text"
                 android:fontFamily="@font/ubuntusans"
                 android:textSize="7pt"/>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/password_err_msg"
+                android:textColor="@color/tailwind_red_500"
+                android:fontFamily="@font/ubuntusans"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,18 +161,5 @@
             android:textSize="7pt"
             android:id="@+id/login_button"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/kuncup"
-            android:text="kuncupp"
-            android:textSize="10pt"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/kuncupl"
-            android:text="kuncupp"
-            android:textSize="10pt"/>
     </LinearLayout>
 </ScrollView>
